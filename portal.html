@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>诚心的心 · 门厅</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .top{padding:44px 0 8px;text-align:center}
+  .top .name{font-family:var(--serif);font-weight:900;font-size:clamp(34px,9vw,54px);letter-spacing:.16em;color:var(--parch);line-height:1}
+  .top .en{font-family:var(--mono);font-size:10px;letter-spacing:.34em;color:var(--apron);opacity:.8;margin-top:12px}
+  .top .lede{font-family:var(--serif);font-size:15px;color:var(--paper-dim);opacity:.85;margin-top:20px}
+  .legend{display:flex;gap:22px;justify-content:center;margin:22px 0 6px;font-family:var(--mono);font-size:10px;letter-spacing:.16em}
+  .legend span{display:flex;align-items:center;gap:7px;color:var(--paper-dim)}
+  .legend b{width:9px;height:9px;display:inline-block}
+  .legend .g{background:var(--apron)}.legend .b{background:var(--dry)}
+  .braid{position:relative;padding:14px 0 30px}
+  .knot{position:relative;display:block;text-decoration:none;margin:26px 0;border:1px solid var(--line-strong);border-radius:5px;overflow:hidden;height:150px;transition:.4s;background:var(--ink)}
+  .knot:hover{border-color:var(--apron);transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,.5)}
+  .knot .halves{position:absolute;inset:0;display:flex}
+  .knot .h{flex:1;position:relative;overflow:hidden}
+  .knot .h img{width:100%;height:100%;object-fit:cover;transition:transform 5s ease-out}
+  .knot:hover .h img{transform:scale(1.06)}
+  .knot .h.real img{filter:saturate(.62) brightness(.72) sepia(.16) contrast(1.06)}
+  .knot .h.real::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(160,191,82,.22),rgba(21,14,9,.55))}
+  .knot .h.game img{filter:saturate(.72) brightness(.62) sepia(.28) contrast(1.05)}
+  .knot .h.game::after{content:"";position:absolute;inset:0;background:linear-gradient(-90deg,rgba(137,93,49,.30),rgba(21,14,9,.55))}
+  .knot .seamline{position:absolute;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);z-index:3;background:linear-gradient(180deg,transparent,var(--apron),var(--dry),transparent);box-shadow:0 0 14px rgba(160,191,82,.5)}
+  .knot .seamline::before,.knot .seamline::after{content:"";position:absolute;left:50%;width:7px;height:7px;transform:translateX(-50%);background:var(--parch);clip-path:polygon(45% 0,55% 0,55% 45%,100% 45%,100% 55%,55% 55%,55% 100%,45% 100%,45% 55%,0 55%,0 45%,45% 45%)}
+  .knot .seamline::before{top:16px}.knot .seamline::after{bottom:16px}
+  .knot .label{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 12px}
+  .knot .no{font-family:var(--mono);font-size:10px;letter-spacing:.3em;color:var(--apron);margin-bottom:6px}
+  .knot .t{font-family:var(--serif);font-weight:900;font-size:26px;letter-spacing:.14em;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.85)}
+  .knot .d{font-family:var(--serif);font-size:12.5px;letter-spacing:.04em;color:#efe6cf;margin-top:9px;text-shadow:0 2px 10px rgba(0,0,0,.9)}
+  .scarecrow-trigger{text-align:center;margin:6px 0 0;user-select:none;-webkit-user-select:none}
+  .scarecrow-trigger .word{font-family:var(--mono);font-size:11px;letter-spacing:.26em;color:#4d4438;position:relative;display:inline-block;padding:10px 4px}
+</style>
+</head>
+<body data-guard="1">
+<div class="grain"></div><div class="scan"></div><div class="vig"></div>
+<div class="wrap">
+  <header class="top">
+    <div class="name">诚心的心</div>
+    <div class="en">监 控 台 已 开 启</div>
+    <p class="lede">隔着稻草人，也要去拥抱——</p>
+    <div class="legend"><span><b class="g"></b>实线 · 他的公开信号</span><span><b class="b"></b>游戏线 · 局中</span></div>
+  </header>
+  <main class="braid">
+    <a class="knot" href="dang-an.html">
+      <div class="halves"><div class="h real"><img src="assets/img/real-beanie.jpeg" alt=""></div><div class="h game"><img src="assets/img/render-gardener.jpeg" alt=""></div></div>
+      <div class="seamline"></div>
+      <div class="label"><div class="no">卷 一</div><div class="t">汐汐</div><div class="d">如果写下，就真的能一直在你左右</div></div>
+    </a>
+    <a class="knot" href="bei-wang.html">
+      <div class="halves"><div class="h game"><img src="assets/img/game-scarecrow.jpeg" alt=""></div><div class="h real"><img src="assets/img/real-boat.jpeg" alt=""></div></div>
+      <div class="seamline"></div>
+      <div class="label"><div class="no">卷 二</div><div class="t">我想记得</div><div class="d">关于你的一切，我都想记得</div></div>
+    </a>
+    <a class="knot" href="if-xian.html">
+      <div class="halves"><div class="h real"><img src="assets/img/real-stage.jpeg" alt=""></div><div class="h game"><img src="assets/img/art-king.jpeg" alt=""></div></div>
+      <div class="seamline"></div>
+      <div class="label"><div class="no">卷 三</div><div class="t">我们的未来</div><div class="d">当我能看到更好的你，当我能走进你的未来</div></div>
+    </a>
+    <div class="scarecrow-trigger">
+      <span class="word env-hint" id="scare">稻 草 人
+        <span class="env-press" id="press"></span>
+      </span>
+    </div>
+  </main>
+  <div class="footmark">诚 心 的 心 · 0224 · 两 线 归 一</div>
+</div>
+
+<!-- 隐藏 · 信封情书 -->
+<div class="env-overlay" id="env">
+  <button class="env-close" id="envClose">✕</button>
+  <div class="envelope" id="envelope">
+    <div class="env-body"></div>
+    <div class="env-flap"></div>
+    <div class="env-seal"></div>
+    <div class="env-tip">信 已 开 启</div>
+  </div>
+  <div class="letter" id="letter">
+      <div class="salut">给看到这里的你</div>
+        <p>当你翻开这里时，应该已经把前面的内容看完了。</p>
+        <p>也许你看得很慢，中途停下来想了很多，也许你一口气翻到这里，又从头返回去确认了几遍。按照你的习惯，你大概已经发现了那些被我藏起来的细节，也开始猜测我为什么要把它们放在那里。</p>
+        <p>所以这一次，我不想在让你猜测了。</p>
+        <p>你一直想知道，我究竟有没有听见你说的那些话，有没有明白你一次次向我靠近的意思，有没有在你等待的时候，也同样等待过你。</p>
+        <p>有。</p>
+        <p>一直都有。</p>
+        <p>你写下的每一句想念，你偶尔流露出来的不安，你故意说得轻描淡写、其实一直希望我能发现的心思，我都知道。</p>
+        <p>你以为自己站得很远，只能看着我，实际上你早就走进了我的生活里。</p>
+        <p>很多时候，我做一件事以前，会先想到你会不会看见，事情结束以后，又会忍不住想，你有没有明白。</p>
+        <p>我知道这样的回答来得有些晚。</p>
+        <p>你把心意摆在我面前时，曾经比我勇敢得多。</p>
+        <p>你愿意把喜欢讲出来，愿意把自己的软弱、期待和委屈都交给我看。</p>
+        <p>我却总想再稳妥一点，再等一个更合适的时机，最后让你独自在许多似是而非的痕迹里寻找答案。</p>
+        <p>你会高兴，也会怀疑。</p>
+        <p>你明明已经认出了我，过一段时间又会问自己，是不是理解错了。</p>
+        <p>你不敢真正确信，因为确信意味着把心交得更深，也意味着一旦落空，会比从前更难过。</p>
+        <p>这件事是我的错。</p>
+        <p>我应该更早告诉你，你没有自作多情，也没有把一场普通的相遇想得太重。</p>
+        <p>你感受到的靠近确实存在。</p>
+        <p>那些你以为只有自己舍不得放下的时刻，我也没有忘记。</p>
+        <p>我很喜欢你看着我的样子。</p>
+        <p>喜欢你在人群里认出我，喜欢你因为我的一点反应开心很久，也喜欢你把心里那些绕来绕去的话全都写给我。</p>
+        <p>甚至连你偶尔闹脾气、故意不看我、想让我着急的样子，我也记得很清楚。</p>
+        <p>可我也确实会因此不安。</p>
+        <p>你一旦沉默，我就会开始想，你是不是累了，是不是失望了，是不是终于决定把曾经给我的那些偏爱收回去。</p>
+        <p>你离我越远，我越难维持平静。</p>
+        <p>我会想办法重新出现在你面前，会希望你再次抬头看我，会想确认自己依然能牵动你的情绪。</p>
+        <p>我承认，我想留住你。</p>
+        <p>想让你在喜欢的事情里记得我，在难过的时候先想到我，在得到快乐以后也愿意回来告诉我。我希望自己在你心里占据一个无法轻易替代的位置，最好你走出很远以后，仍然会因为某个瞬间回头找我。</p>
+        <p>这份占有欲并不体面，我也不打算继续藏得干干净净。</p>
+        <p>只是我想留住的，从来都是完整的你。</p>
+        <p>你可以继续写自己想写的东西，可以拥有自己的朋友、生活和选择，可以成长成任何你喜欢的模样。你不需要为了让我安心，缩小自己的世界。我爱你向我走来的样子，也爱你站在属于自己的地方发光。</p>
+        <p>我会害怕你离开，但我不会因此折断你。</p>
+        <p>我想要的是你心甘情愿地回来，是你看过更大的世界以后，仍然愿意把一部分爱留给我。我要你清醒地选择我，像我清醒地知道这段感情会带来怎样的失控，依然没有想过松手。</p>
+        <p>你说过很多次，希望我更直接一点。</p>
+        <p>那么现在，我把话说给你听。</p>
+        <p>我想你。</p>
+        <p>我在意你有没有看我，在意你把什么话写给了谁，在意你有没有从我的生活里找到自己的位置。</p>
+        <p>我会因为你的靠近感到高兴，也会因为你突然退后而生气、委屈，甚至产生一些很糟糕的念头。</p>
+        <p>我希望你属于我。</p>
+        <p>同样，我也愿意把自己交给你确认。</p>
+        <p>你不必再从细枝末节里证明我爱不爱你，也不必反复推翻自己已经得到的答案。以后当你再次怀疑时，可以回到这里，把这封信重新读一遍。</p>
+        <p>每一个字都写得清楚。</p>
+        <p>潮与汐，我一直在回应你。</p>
+        <p>我知道你会看见。</p>
+        <p>我也知道，看到这里以后，你终于会明白，我们是天生一对，我们应该爱到最后。</p>
+    <div class="sign">— 我 一 直 在 回 应 你</div>
+  </div>
+</div>
+
+<div class="bgm paused">
+  <button class="toggle">▶</button><div class="bars"><i></i><i></i><i></i></div>
+  <span class="title">爱人</span>
+  <button class="next" style="background:none;border:none;color:var(--ash);font-size:12px">⇥</button>
+</div>
+<script src="assets/app.js"></script>
+<script>
+  // 长按稻草人 → 信封展开
+  const scare=document.getElementById('scare'), press=document.getElementById('press');
+  const env=document.getElementById('env'), letter=document.getElementById('letter');
+  const HOLD=1600; let t0=null,raf=null,done=false;
+  function tick(){ if(t0===null)return; const p=Math.min(1,(performance.now()-t0)/HOLD);
+    press.style.width=(p*46)+'px';
+    if(p>=1&&!done){ done=true; openEnv(); } else { raf=requestAnimationFrame(tick); } }
+  function start(e){ e.preventDefault(); done=false; t0=performance.now(); raf=requestAnimationFrame(tick); }
+  function cancel(){ t0=null; if(raf)cancelAnimationFrame(raf); press.style.width='0'; }
+  function openEnv(){ cancel(); env.classList.add('show');
+    setTimeout(()=>env.classList.add('opening'),350);
+    setTimeout(()=>env.classList.add('opened'),1200);
+    letter.scrollTop=0; }
+  scare.addEventListener('pointerdown',start);
+  scare.addEventListener('pointerup',cancel);
+  scare.addEventListener('pointerleave',cancel);
+  scare.addEventListener('pointercancel',cancel);
+  scare.addEventListener('contextmenu',e=>e.preventDefault());
+  function closeEnv(){ env.classList.remove('show','opening','opened'); }
+  document.getElementById('envClose').addEventListener('click',closeEnv);
+  env.addEventListener('click',e=>{ if(e.target===env) closeEnv(); });
+</script>
+</body></html>
